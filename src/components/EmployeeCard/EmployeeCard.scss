@@ -1,0 +1,11 @@
+.employee-card {
+  background-color: pink;
+  border: 2px solid #000000;
+  padding: 15px;
+  margin: 20px;
+  width: 200px;
+
+  &__details {
+    padding: 5px;
+  }
+}
