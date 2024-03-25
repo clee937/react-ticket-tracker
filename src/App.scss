@@ -16,4 +16,10 @@
     color: #000000;
     font-weight: 400;
   }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
