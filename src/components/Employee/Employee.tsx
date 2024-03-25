@@ -1,5 +1,5 @@
 import "./Employee.scss";
-import Employee from "../../types/Employee";
+import EmployeeData from "../../types/Employee";
 
 const Employee = () => {
   return (

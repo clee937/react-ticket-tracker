@@ -5,11 +5,11 @@ type Profile = {
   profilePicture: string;
 };
 
-type Employee = {
+type EmployeeData = {
   id: number;
   name: string;
   role: string;
   profile: Profile;
 };
 
-export default Employee;
+export default EmployeeData;
