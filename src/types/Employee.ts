@@ -1,15 +1,13 @@
-type Profile = {
-  experience: string;
-  department: string;
-  techstack: string[];
-  profilePicture: string;
-};
-
-type EmployeeData = {
+type Employee = {
   id: number;
   name: string;
   role: string;
-  profile: Profile;
+  profile: {
+    experience: string;
+    department: string;
+    techstack: string[];
+    profilePicture: string;
+  };
 };
 
-export default EmployeeData;
+export default Employee;
