@@ -1,11 +1,11 @@
 import "./App.scss";
-import Employee from "./components/Employee/Employee";
+import CardContainer from "./components/CardContainer/CardContainer";
 
 function App() {
   return (
     <div className="app">
       <h1 className="app__title">Ticket Tracker</h1>
-      <Employee />
+      <CardContainer />
     </div>
   );
 }
