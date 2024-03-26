@@ -1,0 +1,33 @@
+.search-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.125rem;
+
+  .search-box__label {
+    font-size: 1.25rem;
+  }
+
+  .search-box__input {
+    margin: 1.25rem 0;
+    padding: 0.625rem;
+    width: 40px;
+    padding: 10px;
+    font-size: 1.125rem;
+    border: 0.313rem #808080 solid;
+    border-radius: 1rem;
+    color: #000000;
+
+    //   &:focus {
+    // 	border: 0.313rem $color-primary solid;
+    // 	outline: none;
+    //   }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search-box {
+    .search-box__input {
+      width: calc((100% / 3) - 3.125rem);
+    }
+  }
+}
