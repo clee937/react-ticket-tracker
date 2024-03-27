@@ -13,9 +13,9 @@ function App() {
     setSearchTerm(input);
   };
 
-  const filteredEmployees: Employee[] = team.filter((employee) =>
-    employee.name.toLowerCase().includes(searchTerm)
-  );
+  const filteredEmployees: Employee[] = team.filter((employee) => {
+    return employee.name.toLowerCase().includes(searchTerm);
+  });
 
   return (
     <div className="app">
@@ -26,14 +26,16 @@ function App() {
         placeHolderText="Search by employee..."
         handleInput={handleInput}
       />
+
       <div className="app__container">
-        {filteredEmployees.map((employee: Employee) => (
-          <EmployeeCard
-            key={employee.id}
-            name={employee.name}
-            role={employee.role}
-          />
-        ))}
+        {filteredEmployees &&
+          filteredEmployees.map((employee: Employee) => (
+            <EmployeeCard
+              key={employee.id}
+              name={employee.name}
+              role={employee.role}
+            />
+          ))}
       </div>
     </div>
   );

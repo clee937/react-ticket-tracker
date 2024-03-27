@@ -1,6 +1,9 @@
 .employee-card {
-  background-color: pink;
-  border: 2px solid #000000;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.5rem #3d4ecb,
+    0 0 0.2rem #3d4ecb, 0 0 0.7rem #3d4ecb, inset 0 0 0.3rem #3d4ecb;
   border-radius: 10px;
   padding: 15px;
   margin: 15px 20px 20px 20px;
@@ -8,5 +11,7 @@
 
   &__details {
     padding: 5px 5px 10px 5px;
+    color: #ffffff;
+    font-weight: 700;
   }
 }
