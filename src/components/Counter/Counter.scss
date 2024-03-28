@@ -9,12 +9,12 @@
   box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.5rem #3d4ecb,
     0 0 0.2rem #3d4ecb, 0 0 0.7rem #3d4ecb, inset 0 0 0.3rem #3d4ecb;
   border-radius: 10px;
-  margin: 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  height: 130px;
 
   &__items {
     color: #ffffff;
@@ -27,25 +27,23 @@
   &__button-container {
     display: flex;
     justify-content: space-between;
-    width: 80px;
+    width: 90px;
   }
 
   &__button {
+    display: inline-block;
+    width: 30px;
     cursor: pointer;
     font-size: 1.5rem;
-    border-radius: 5px;
+    border-radius: 50px;
     border: none;
-    padding: 5px;
+    padding: 2px;
     font-weight: 700;
     color: #000000;
 
     &:active,
     &:focus {
       filter: brightness(130%);
-    }
-
-    &--decrement {
-      padding: 8px;
     }
   }
 }
