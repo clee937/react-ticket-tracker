@@ -9,8 +9,10 @@ type EmployeeCardProps = {
 const EmployeeCard = ({ name, role }: EmployeeCardProps) => {
   return (
     <div className="employee-card">
-      <p className="employee-card__details">{name}</p>
-      <p className="employee-card__details">{role}</p>
+      <div className="employee-card__details-container">
+        <p className="employee-card__details">{name}</p>
+        <p className="employee-card__details">{role}</p>
+      </div>
       <Counter />
     </div>
   );
