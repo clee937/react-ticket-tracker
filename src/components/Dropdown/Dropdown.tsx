@@ -27,9 +27,7 @@ const Dropdown = ({ label, handleSelect }: DropdownProps) => {
         className="dropdown__select"
         onChange={handleSelect}
       >
-        <option className="dropdown__all" value="">
-          All…
-        </option>
+        <option value="">All…</option>
         {uniqueRoles &&
           uniqueRoles.map((employee: Employee) => (
             <option key={employee.id} value={employee.role}>
