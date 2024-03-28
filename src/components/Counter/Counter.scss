@@ -23,6 +23,11 @@
   &__items {
     color: $primary-font-color;
     font-weight: 700;
+
+    &--heading {
+      font-size: 1.1rem;
+    }
+
     &--value {
       font-size: 1.3rem;
     }
