@@ -1,3 +1,5 @@
+@use "../../assets/styles/_variables" as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +7,11 @@
 }
 
 .counter {
-  border: 2px #ffffff solid;
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.5rem #3d4ecb,
-    0 0 0.2rem #3d4ecb, 0 0 0.7rem #3d4ecb, inset 0 0 0.3rem #3d4ecb;
+  border: 2px $border-color solid;
+  box-shadow: 0 0 0.1rem $secondary-shadow-color,
+    0 0 0.1rem $secondary-shadow-color, 0 0 0.5rem $primary-shadow-color,
+    0 0 0.2rem $primary-shadow-color, 0 0 0.7rem $primary-shadow-color,
+    inset 0 0 0.3rem $primary-shadow-color;
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -17,7 +21,7 @@
   height: 130px;
 
   &__items {
-    color: #ffffff;
+    color: $primary-font-color;
     font-weight: 700;
     &--value {
       font-size: 1.3rem;
@@ -39,11 +43,12 @@
     border: none;
     padding: 2px;
     font-weight: 700;
-    color: #000000;
+    color: $secondary-font-color;
+    transition: transform 0.4s ease;
 
-    &:active,
-    &:focus {
-      filter: brightness(130%);
+    &:active {
+      transform: scale(1.2);
+      filter: brightness(150%);
     }
   }
 }
