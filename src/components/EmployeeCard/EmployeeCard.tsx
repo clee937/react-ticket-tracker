@@ -10,8 +10,12 @@ const EmployeeCard = ({ name, role }: EmployeeCardProps) => {
   return (
     <div className="employee-card">
       <div className="employee-card__details-container">
-        <p className="employee-card__details">{name}</p>
-        <p className="employee-card__details">{role}</p>
+        <p className="employee-card__details employee-card__details--name">
+          {name}
+        </p>
+        <p className="employee-card__details employee-card__details--role">
+          {role}
+        </p>
       </div>
       <Counter />
     </div>
