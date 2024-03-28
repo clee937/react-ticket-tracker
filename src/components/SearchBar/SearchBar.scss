@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 3.125rem;
-  width: 280px;
   margin: 15px;
 
   .search-bar__label {
@@ -20,7 +18,7 @@
     padding: 0.625rem;
     width: 260px;
     padding: 10px;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     border: 0.313rem #ffffff solid;
     border-radius: 1rem;
     box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #3d4ecb,
@@ -34,12 +32,12 @@
   }
 }
 
-@media screen and (min-width: 546px) {
+@media screen and (min-width: 854px) {
   .search-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 480px;
+    justify-content: space-between;
+    width: 380px;
   }
 }
