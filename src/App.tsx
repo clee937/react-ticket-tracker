@@ -29,7 +29,7 @@ function App() {
     } else if (searchTerm) {
       return employee.name.toLowerCase().includes(searchTerm);
     } else if (selectValue) {
-      return employee.role.toLowerCase().includes(selectValue);
+      return employee.role.toLowerCase() === selectValue;
     }
     return true;
   });
