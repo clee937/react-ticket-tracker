@@ -2,7 +2,7 @@
 
 ## About
 
-Ticket Tracker is a mobile responsive web app to keep track of workload by recording the number of tickets for each employee with a counter. The functionality has been built with React and Typescript, and the styling with SCSS.
+Ticket Tracker is a mobile responsive web app to help manage employee workload by keeping track of tickets of each employee. The functionality has been built with React and Typescript, and the styling with SCSS.
 
 ## Features
 
@@ -35,4 +35,4 @@ Ticket Tracker is a mobile responsive web app to keep track of workload by recor
 
 ### Live site
 
-View live site [here:](https://clee937.github.io/react-ticket-tracker/).
+View live site [here](https://clee937.github.io/react-ticket-tracker/).
