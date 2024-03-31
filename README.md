@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Ticket Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+Ticket Tracker is a mobile responsive web app to keep track of workload by recording the number of tickets for each employee with a counter. The functionality has been built with React and Typescript, and the styling with SCSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Each card includes the employee's name and role and has its own counter to keep track of the employee's number of tickets.
+- The counter can be incremented and decremented using the plus and minus buttons.
+- Search bar that allows employees to be searched for by name.
+- Dropdown bar that allows employees to be searched for by role.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Preview
 
-- Configure the top-level `parserOptions` property like this:
+![ticket-tracker](/ticket-tracker.png "image of ticket tracker app")
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Skills practiced
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- React components
+- Passing props from parent to child components
+- Handling state with useState()
+- Function type safety with event and event handler type references
+- SCSS/BEM convention styling
+- React/Chrome Dev Tools
+- Git/Github
+
+### Technologies used
+
+- React
+- TypeScript
+- SCSS
+- Vite
+- Git/GitHub
+
+### Live site
+
+View live site [here:](https://clee937.github.io/react-ticket-tracker/).
